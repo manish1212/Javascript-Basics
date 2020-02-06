@@ -4,10 +4,13 @@
 var test = 3; 
 var test = 3; // ok
 
+//you can redeclare a variable using var (avoid doing that) 
+
 // let, is like var, but block scoped, and not allowed to re-declare
 let hello = 'world'; // Notice strings use single quotes (More strict) 
 hello = 5; // changing the type of variable is okay, in this case string to number.
 hello = [];
+console.log("just checking",hello);
 // let hello = 'world'; can't do this either!
 
 // const is a constant
