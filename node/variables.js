@@ -53,3 +53,16 @@ hash['key']='value';
 console.log(hash);
 
 
+/**
+
+git reset <filename>
+before commit
+
+git checkout -- <filename>
+take the last version and use it as current version 
+
+
+*/
+
+
+

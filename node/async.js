@@ -5,9 +5,27 @@ const sleepyHello = () => new Promise(resolve => setTimeout(() => {
   resolve();
 }, 1200));
 
-const test = async () => {
-  await sleepyHello();
-  console.log('Now this');
+
+//1st way 
+const test = async () => { //this is now a promsise
+  // await sleepyHello(); // it will wait for that function to get execute
+  // console.log('Now this');
+
+  // alternative to .then and .catch (because we cannot use .then/.catch in async function)
+  try{
+    await sleepyHello(); // it will wait for that function to get execute
+  }catch(e){
+    console.log('Now this');
+  }
 };
 
-test();
+test()
+.then(()=>console.log("coz due to async test becomes a promise"));
+
+
+//2nd way
+// sleepyHello()
+// .then(()=>console.log("Now this"))
+
+// goal to print hello first and then "Now this"
+//async is a short way to do a promise
