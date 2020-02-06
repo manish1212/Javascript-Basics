@@ -25,10 +25,3 @@ obj.b = 10;
 // For Practice
 
 // declare an object with an object as a property
-
-
-// myObject = {}; // not allowes
-//myObject.a = 3; // ok
-//myObject.a.b = 4; // also ok
-
-// delete a property

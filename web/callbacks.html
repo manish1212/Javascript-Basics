@@ -7,13 +7,11 @@
 <body>
   Open the console to see output
   <script>
-    let temp = 4;
     const doSomethingAsync = (callback) => {
       setTimeout(callback, 2000);
     }
-    temp +=1 ;
-    doSomethingAsync(() => {
-      alert(temp);
+    doSomethingAsync(() => { // another form of async, a function is passed as a parameter
+      alert('Hello');
     });
   </script>
 </body>

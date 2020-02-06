@@ -23,8 +23,4 @@ array[1] = 'hello';
 
 // use push
 
-// use shift
-
-// use unshift
-
 // use filter

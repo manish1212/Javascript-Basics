@@ -22,22 +22,11 @@ class SubClass extends Something {
   constructor() {
     super('asd');
   }
-
-  static myFunction() {
-    console.log('I am static');
-  }
 }
 
 const subclass = new SubClass();
 subclass.hello();
 
 // add a property after the object has been instantiated
-subclass.a = 'hello world';
-console.log(subclass.a);
 
 // add a static function
-SubClass.myFunction();
-
-SubClass.prototype.test = 4;
-const newTest = new SubClass();
-console.log(newTest.test);

@@ -6,7 +6,7 @@ const sleepyHello = () => new Promise(resolve => setTimeout(() => {
 }, 1200));
 
 const test = async () => {
-  await sleepyHello() // option 2
+  await sleepyHello();
   console.log('Now this');
 };
 
