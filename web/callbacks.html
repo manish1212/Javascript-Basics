@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  Open the console to see output
+  <script>
+    let temp = 4;
+    const doSomethingAsync = (callback) => {
+      setTimeout(callback, 2000);
+    }
+    temp +=1 ;
+    doSomethingAsync(() => {
+      alert(temp);
+    });
+  </script>
+</body>
+
+</html>
